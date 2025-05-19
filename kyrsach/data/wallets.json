@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TON",
+    "icon": "images/ton-logo.svg",
+    "qr": "images/TON_QR.jpg",
+    "address": "UQDrRqtEGV8CHYq-8D1GVIcYUT7e0XtrB0_fRZ--cX_NYmZK"
+  },
+  {
+    "name": "Ethereum",
+    "icon": "images/eth-logo.svg",
+    "qr": "images/ETH_QR.jpg",
+    "address": "0x0b491644d970Be4D40d569a6e57475838EDf4ECA"
+  },
+  {
+    "name": "Bitcoin",
+    "icon": "images/btc-logo.svg",
+    "qr": "images/BTC_QR.jpg",
+    "address": "12H5GSYiBwxAKaCQteECE4MGnvKFjdTaXF"
+  },
+  {
+    "name": "Tether",
+    "icon": "images/usdt-logo.svg",
+    "qr": "images/USDT_TRC20_QR.jpg",
+    "address": "TR8Tf7Vfk9mbKFsxrwSTeCBxBMjiJPKg55"
+  }
+]

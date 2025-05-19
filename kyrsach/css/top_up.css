@@ -1,0 +1,131 @@
+:root {
+    --primary-bg: #312f36;
+    --secondary-bg: #5d5363;
+    --accent: #6c5ce7;
+    --text-dark: #000;
+    --text-light: #fff;
+    --text-gray: #828282;
+    --card-bg: #fff;
+    --success: #4caf50;
+}
+
+.payment-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    margin-bottom: 40px;
+}
+
+.crypto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.crypto-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.crypto-card:hover {
+    transform: translateY(-5px);
+}
+
+.crypto-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.crypto-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.crypto-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.qr-code {
+    width: 100%;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.crypto-address {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    word-break: break-all;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.copy-btn {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.copy-btn:hover {
+    background-color: var(--accent);
+}
+
+.copy-btn.copied {
+    background-color: var(--success);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .crypto-grid {
+        grid-template-columns: 1fr;
+    }
+}
